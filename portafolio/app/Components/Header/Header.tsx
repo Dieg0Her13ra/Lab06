@@ -16,38 +16,38 @@ export default function Header(){
 
             <input type="checkbox" id="nav-toggle" className={styles.nav__checkbox}></input>
             <label htmlFor="nav-toggle" className={styles.nav__toggle}>
-                <i className={styles.fas} fa-bars></i>
+                <i className={`fa-bars ${styles.fas}`} ></i>
             </label>
             
             <div className={styles.nav__menu} id="nav-menu">
                 <label htmlFor="nav-toggle" className={styles.nav__close}>
-                    <i className="fas fa-times"></i>
+                    <i className={`fa-times ${styles.fas}`}></i>
                 </label>
                 
                 <ul className={styles.nav__list}>
                     <li className={styles.nav__item}>
                         <label htmlFor="nav-toggle">
-                            <Link href="#home" className="nav__link">Inicio</Link>
+                            <Link href="#home" className={styles.nav__link}>Inicio</Link>
                         </label>
                     </li>
                     <li className={styles.nav__item}>
                         <label htmlFor="nav-toggle">
-                            <Link href="#interests" className="nav__link">Intereses</Link>
+                            <Link href="#interests" className={styles.nav__link}>Intereses</Link>
                         </label>
                     </li>
                     <li className={styles.nav__item}>
                         <label htmlFor="nav-toggle">
-                            <Link href="#cv" className="nav__link">CV</Link>
+                            <Link href="#cv" className={styles.nav__link}>CV</Link>
                         </label>
                     </li>
                     <li className={styles.nav__item}>
                         <label htmlFor="nav-toggle">
-                            <Link href="#projects" className="nav__link">Proyectos</Link>
+                            <Link href="#projects" className={styles.nav__link}>Proyectos</Link>
                         </label>
                     </li>
                     <li className={styles.nav__item}>
                         <label htmlFor="nav-toggle">
-                            <Link href="#contact" className="nav__link">Contacto</Link>
+                            <Link href="#contact" className={styles.nav__link}>Contacto</Link>
                         </label>
                     </li>
                 </ul>
