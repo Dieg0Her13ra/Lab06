@@ -4,7 +4,7 @@ import Link from 'next/link';
 
 export default function CV(){
     return(
-    <section className="cv section" id="cv">
+    <section className={`section ${styles.cv}`} id="cv">
             <div className="container">
                 <div className={styles.cv__content}>
                     <div className={styles.cv__info}>
