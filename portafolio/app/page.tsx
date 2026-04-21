@@ -6,6 +6,7 @@ import CV from "./Components/CV/CV";
 import Projects from "./Components/Projects/Projects";
 import Contact from "./Components/Contact/Contact";
 import Footer from "./Components/Footer/Footer";
+import ScrollToTop from "./Components/ScrollToTop/ScrollToTop";
 export default function Home() {
   return (
     <>
@@ -16,6 +17,7 @@ export default function Home() {
     <Projects/>
     <Contact/>
     <Footer/>
+    <ScrollToTop/>
     </>
   );
 }

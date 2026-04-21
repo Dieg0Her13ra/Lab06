@@ -1,8 +1,8 @@
 import React from 'react';
 import styles from  './Header.module.css'
 import Link from 'next/link';
-
-
+import { faBars, fas, faTimes} from '@fortawesome/free-solid-svg-icons'; 
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 let HeaderData:string = 'Diego Herrera Hernández'
 
 export default function Header(){
@@ -16,12 +16,12 @@ export default function Header(){
 
             <input type="checkbox" id="nav-toggle" className={styles.nav__checkbox}></input>
             <label htmlFor="nav-toggle" className={styles.nav__toggle}>
-                <i className={`fa-bars ${styles.fas}`} ></i>
+            <FontAwesomeIcon icon={faBars} />
             </label>
             
             <div className={styles.nav__menu} id="nav-menu">
                 <label htmlFor="nav-toggle" className={styles.nav__close}>
-                    <i className={`fa-times ${styles.fas}`}></i>
+                    <FontAwesomeIcon icon={faTimes} />
                 </label>
                 
                 <ul className={styles.nav__list}>

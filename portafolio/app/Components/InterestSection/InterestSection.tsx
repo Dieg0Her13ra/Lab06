@@ -39,7 +39,7 @@ export default function InterestSection(){
                         <h3 className={styles.card__title}>Ciberseguridad</h3>
                         <p className={styles.card__description}>
                             Protección de sistemas y datos, análisis de vulnerabilidades 
-                            y mejores prácticas de seguridad inhtmlFormática.
+                            y mejores prácticas de seguridad informática.
                         </p>
                         <div className={styles.card__tags}>
                             <span className={styles.tag}>Seguridad Web</span>
@@ -86,7 +86,7 @@ export default function InterestSection(){
                         </div>
                         <h3 className={styles.card__title}>Desarrollo Móvil</h3>
                         <p className={styles.card__description}>
-                            Creación de aplicaciones móviles nativas y multiplatahtmlForma 
+                            Creación de aplicaciones móviles nativas y multiplataforma 
                             para Android e iOS.
                         </p>
                         <div className={styles.card__tags}>

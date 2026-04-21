@@ -19,7 +19,7 @@ export default function Hero(){
                     <p className={styles.hero__description}>
                         Recién egresado de Tecnologías de la Información apasionado por crear 
                         soluciones digitales innovadoras. Combino creatividad técnica con un 
-                        enfoque orientado a resultados para transhtmlFormar ideas en código funcional.
+                        enfoque orientado a resultados para transformar ideas en código funcional.
                     </p>
                     <div className={styles.hero__buttons}>
                         <Link href="#projects" className="btn btn--primary">

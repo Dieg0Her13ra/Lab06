@@ -11,7 +11,7 @@ export default function CV(){
                         <span className="section__subtitle">Conoce mi trayectoria</span>
                         <h2 className="section__title">Mi Currículum</h2>
                         <p className={styles.cv__description}>
-                            Descarga mi CV para conocer mi htmlFormación académica, habilidades 
+                            Descarga mi CV para conocer mi formación académica, habilidades 
                             técnicas y experiencia. También puedes conectar conmigo en mis 
                             redes profesionales.
                         </p>
