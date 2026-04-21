@@ -1,6 +1,9 @@
 import React from 'react';
 import styles from  './Contact.module.css'
 import Link from 'next/link';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import {faEnvelope, faMap, faBriefcase, faPaperPlane} from '@fortawesome/free-solid-svg-icons'; 
+
 
 export default function Contact(){
     return(
@@ -18,7 +21,7 @@ export default function Contact(){
                         <div className={styles.contact__data}>
                             <div className={styles.contact__item}>
                                 <div className={styles.contact__icon}>
-                                    <i className="fas fa-envelope"></i>
+                                    <FontAwesomeIcon icon={faEnvelope} /> 
                                 </div>
                                 <div className={styles.contact__text}>
                                     <span className={styles.contact__label}>Email</span>
@@ -28,7 +31,7 @@ export default function Contact(){
                             
                             <div className={styles.contact__item}>
                                 <div className={styles.contact__icon}>
-                                    <i className="fa-solid fa-map"></i>
+                                    <FontAwesomeIcon icon={faMap} /> 
                                 </div>
                                 <div className={styles.contact__text}>
                                     <span className={styles.contact__label}>Ubicación</span>
@@ -38,7 +41,7 @@ export default function Contact(){
                             
                             <div className={styles.contact__item}>
                                 <div className={styles.contact__icon}>
-                                    <i className="fas fa-briefcase"></i>
+                                    <FontAwesomeIcon icon={faBriefcase} /> 
                                 </div>
                                 <div className={styles.contact__text}>
                                     <span className={styles.contact__label}>Disponibilidad</span>
@@ -55,7 +58,7 @@ export default function Contact(){
                                 Envíame un mensaje y te responderé lo antes posible.
                             </p>
                             <a href="mailto:diego0hh013@gmail.com" className="btn btn--primary btn--large btn--full">
-                                <i className="fas fa-paper-plane"></i> Enviar mensaje
+                                <FontAwesomeIcon icon={faPaperPlane} /> Enviar mensaje
                             </a>
                         </div>
                     </div>

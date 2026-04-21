@@ -1,6 +1,9 @@
 import React from 'react';
 import styles from  './InterestSection.module.css'
 import Link from 'next/link';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+
+import { faBrain, faDatabase, faGlobe, faShieldHalved,faMobileScreenButton,faCloud,faGraduationCap} from '@fortawesome/free-solid-svg-icons'; 
 
 export default function InterestSection(){
     return(
@@ -18,7 +21,7 @@ export default function InterestSection(){
                 <div className={styles.interests__grid}>
                     <article className={styles.interest__card}>
                         <div className={styles.card__icon}>
-                            <i className="fa-solid fa-globe"></i>
+                            <FontAwesomeIcon icon={faGlobe}/>
                         </div>
                         <h3 className={styles.card__title}>Desarrollo Web</h3>
                         <p className={styles.card__description}>
@@ -34,7 +37,7 @@ export default function InterestSection(){
                     
                     <article className={styles.interest__card}>
                         <div className={styles.card__icon}>
-                            <i className="fas fa-shield-halved"></i>
+                            <FontAwesomeIcon icon={faShieldHalved}/>
                         </div>
                         <h3 className={styles.card__title}>Ciberseguridad</h3>
                         <p className={styles.card__description}>
@@ -50,7 +53,7 @@ export default function InterestSection(){
                     
                     <article className={styles.interest__card}>
                         <div className={styles.card__icon}>
-                            <i className="fas fa-brain"></i>
+                             <FontAwesomeIcon icon={faBrain}/>
                         </div>
                         <h3 className={styles.card__title}>Inteligencia Artificial</h3>
                         <p className={styles.card__description}>
@@ -66,7 +69,7 @@ export default function InterestSection(){
                     
                     <article className={styles.interest__card}>
                         <div className={styles.card__icon}>
-                            <i className="fas fa-database"></i>
+                            <FontAwesomeIcon icon={faDatabase}/>
                         </div>
                         <h3 className={styles.card__title}>Bases de Datos</h3>
                         <p className={styles.card__description}>
@@ -82,7 +85,7 @@ export default function InterestSection(){
                     
                     <article className={styles.interest__card}>
                         <div className={styles.card__icon}>
-                            <i className="fas fa-mobile-screen-button"></i>
+                            <FontAwesomeIcon icon={faMobileScreenButton}/>
                         </div>
                         <h3 className={styles.card__title}>Desarrollo Móvil</h3>
                         <p className={styles.card__description}>
@@ -98,7 +101,7 @@ export default function InterestSection(){
                     
                     <article className={styles.interest__card}>
                         <div className={styles.card__icon}>
-                            <i className="fas fa-cloud"></i>
+                            <FontAwesomeIcon icon={faCloud}/>
                         </div>
                         <h3 className={styles.card__title}>Cloud Computing</h3>
                         <p className={styles.card__description}>
@@ -115,7 +118,7 @@ export default function InterestSection(){
                 
                 <div className={styles.subjects}>
                     <h3 className={styles.subjects__title}>
-                        <i className="fas fa-graduation-cap"></i> Materias Relevantes
+                        <FontAwesomeIcon icon={faGraduationCap}/>Materias Relevantes
                     </h3>
                     <div className={styles.subjects__list}>
                         <span className={styles.subject}>Programación Orientada a Objetos</span>

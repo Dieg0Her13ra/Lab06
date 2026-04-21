@@ -1,8 +1,9 @@
 import React from 'react';
 import styles from  './Header.module.css'
 import Link from 'next/link';
-import { faBars, fas, faTimes} from '@fortawesome/free-solid-svg-icons'; 
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+
+import { faBars, fas, faTimes} from '@fortawesome/free-solid-svg-icons'; 
 let HeaderData:string = 'Diego Herrera Hernández'
 
 export default function Header(){

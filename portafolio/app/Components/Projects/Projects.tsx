@@ -1,6 +1,9 @@
 import React from 'react';
 import styles from  './Projects.module.css'
 import Link from 'next/link';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import {faGithub, } from '@fortawesome/free-brands-svg-icons'
+import { faLaptopCode, faExternalLinkAlt, faChartLine, faRobot} from '@fortawesome/free-solid-svg-icons'; 
 
 
 
@@ -20,14 +23,14 @@ export default function Projects(){
                     <article className={styles.project__card}>
                         <div className={styles.project__image}>
                             <div className={styles.project__placeholder}>
-                                <i className="fas fa-laptop-code"></i>
+                                <FontAwesomeIcon icon={faLaptopCode}/>
                             </div>
                             <div className={styles.project__overlay}>
                                 <a href="#" target="_blank" rel="noopener noreferrer" className={styles.project__link}>
-                                    <i className="fas fa-external-link-alt"></i>
+                                    <FontAwesomeIcon icon={faExternalLinkAlt}/>
                                 </a>
                                 <a href="https://github.com/Dieg0Her13ra/proyecto-1" target="_blank" rel="noopener noreferrer" className={styles.project__link}>
-                                    <i className="fab fa-github"></i>
+                                    <FontAwesomeIcon icon={faGithub}/>
                                 </a>
                             </div>
                         </div>
@@ -49,14 +52,14 @@ export default function Projects(){
                     <article className={styles.project__card}>
                         <div className={styles.project__image}>
                             <div className={styles.project__placeholder}>
-                                <i className="fas fa-chart-line"></i>
+                                <FontAwesomeIcon icon={faChartLine}/>
                             </div>
                             <div className={styles.project__overlay}>
                                 <a href="#" target="_blank" rel="noopener noreferrer" className={styles.project__link}>
-                                    <i className="fas fa-external-link-alt"></i>
+                                    <FontAwesomeIcon icon={faExternalLinkAlt}/>
                                 </a>
                                 <a href="https://github.com/Dieg0Her13ra/proyecto-2" target="_blank" rel="noopener noreferrer" className={styles.project__link}>
-                                    <i className="fab fa-github"></i>
+                                    <FontAwesomeIcon icon={faGithub}/>
                                 </a>
                             </div>
                         </div>
@@ -77,14 +80,14 @@ export default function Projects(){
                     <article className={styles.project__card}>
                         <div className={styles.project__image}>
                             <div className={styles.project__placeholder}>
-                                <i className="fas fa-robot"></i>
+                                <FontAwesomeIcon icon={faRobot}/>
                             </div>
                             <div className={styles.project__overlay}>
                                 <a href="#" target="_blank" rel="noopener noreferrer" className={styles.project__link}>
-                                    <i className="fas fa-external-link-alt"></i>
+                                    <FontAwesomeIcon icon={faExternalLinkAlt}/>
                                 </a>
                                 <a href="https://github.com/Dieg0Her13ra/proyecto-3" target="_blank" rel="noopener noreferrer" className={styles.project__link}>
-                                    <i className="fab fa-github"></i>
+                                    <FontAwesomeIcon icon={faGithub}/>
                                 </a>
                             </div>
                         </div>
@@ -105,7 +108,7 @@ export default function Projects(){
                 
                 <div className={styles.projects__more}>
                     <a href="https://github.com/Dieg0Her13ra" target="_blank" rel="noopener noreferrer" className="btn btn--outline">
-                        <i className="fab fa-github"></i> Ver más en GitHub
+                        <FontAwesomeIcon icon={faGithub}/>Ver más en GitHub
                     </a>
                 </div>
             </div>

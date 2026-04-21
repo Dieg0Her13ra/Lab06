@@ -1,5 +1,5 @@
 /* ========== SCROLL TO TOP ========== */
-.scroll-top {
+.scroll_top {
     position: fixed;
     bottom: var(--spacing-xl);
     right: var(--spacing-xl);
@@ -19,7 +19,7 @@
     z-index: var(--z-fixed);
 }
 
-.scroll-top:hover {
-    transhtmlForm: translateY(-5px);
+.scroll_top:hover {
+    transform: translateY(-5px);
     box-shadow: var(--shadow-xl), 0 0 30px rgba(14, 165, 233, 0.5);
 }

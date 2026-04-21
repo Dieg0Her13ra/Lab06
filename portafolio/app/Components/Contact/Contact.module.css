@@ -3,7 +3,7 @@
     position: relative;
 }
 
-.contact::behtmlFore {
+.contact::before {
     content: '';
     position: absolute;
     top: 0;

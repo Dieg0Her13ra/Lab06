@@ -1,8 +1,9 @@
 import React from 'react';
 import styles from  './Hero.module.css'
 import Link from 'next/link';
-import { faRocket, faEnvelope,faUserAstronaut, faChevronDown} from '@fortawesome/free-solid-svg-icons'; 
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+
+import { faRocket, faEnvelope,faUserAstronaut, faChevronDown} from '@fortawesome/free-solid-svg-icons'; 
 
 let HeroData:string = 'Diego Herrera Hernández 🐉 '
 let HeroData2:string = 'Ingeniero de Software'

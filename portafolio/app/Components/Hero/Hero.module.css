@@ -9,7 +9,7 @@
     overflow: hidden;
 }
 
-.hero::behtmlFore {
+.hero::before {
     content: '';
     position: absolute;
     top: 0;
@@ -144,10 +144,10 @@
 
 @keyframes float {
     0%, 100% {
-        transhtmlForm: translateY(0);
+        transform: translateY(0);
     }
     50% {
-        transhtmlForm: translateY(-20px);
+        transform: translateY(-20px);
     }
 }
 
@@ -155,7 +155,7 @@
     position: absolute;
     bottom: var(--spacing-xl);
     left: 50%;
-    transhtmlForm: translateX(-50%);
+    transform: translateX(-50%);
 }
 
 .hero__scroll-link {
@@ -170,12 +170,12 @@
 
 @keyframes bounce {
     0%, 20%, 50%, 80%, 100% {
-        transhtmlForm: translateY(0);
+        transform: translateY(0);
     }
     40% {
-        transhtmlForm: translateY(-10px);
+        transform: translateY(-10px);
     }
     60% {
-        transhtmlForm: translateY(-5px);
+        transform: translateY(-5px);
     }
 }

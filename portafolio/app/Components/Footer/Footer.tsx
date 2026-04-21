@@ -1,7 +1,9 @@
 import React from 'react';
 import styles from  './Footer.module.css'
 import Link from 'next/link';
-
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import {faGithub,faLinkedin } from '@fortawesome/free-brands-svg-icons'
+import { faCoffee, faEnvelope, faHeart} from '@fortawesome/free-solid-svg-icons'; 
 let FooterData:string= 'Diego Herrera Hernández'
 let FooterData2:string= '2026 Herrera Hernandez Diego'
 
@@ -20,13 +22,11 @@ export default function Footer(){
                 </div>
                 <div className={styles.footer__social}>
                     <a href="https://linkedin.com/in/dhh-azdrak" target="_blank" rel="noopener noreferrer" className={styles.footer__social_link} aria-label="LinkedIn">
-                        <i className="fab fa-linkedin-in"></i>
-                    </a>
+                        <FontAwesomeIcon icon={faLinkedin}/>                   </a>
                     <a href="https://github.com/Dieg0Her13ra" target="_blank" rel="noopener noreferrer" className={styles.footer__social_link} aria-label="GitHub">
-                        <i className="fab fa-github"></i>
-                    </a>
+                        <FontAwesomeIcon icon={faGithub}/>                    </a>
                     <a href="mailto:diego0hh013@gmail.com" className={styles.footer__social_link} aria-label="Email">
-                        <i className="fas fa-envelope"></i>
+                        <FontAwesomeIcon icon={faEnvelope}/> 
                     </a>
                 </div>
             </div>
@@ -36,7 +36,7 @@ export default function Footer(){
                     &copy;<span>{FooterData2}.</span> Todos los derechos reservados.
                 </p>
                 <p className={styles.footer__made}>
-                    Hecho con <i className="fas fa-heart"></i> y mucho <i className="fas fa-coffee"> 🦖</i> 
+                    Hecho con <FontAwesomeIcon icon={faHeart}/>  y mucho <FontAwesomeIcon icon={faCoffee}/> 🦖 
                 </p>
             </div>
         </div>

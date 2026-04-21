@@ -1,9 +1,9 @@
 import React from 'react';
 import styles from  './CV.module.css'
 import Link from 'next/link';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import {faDownload, faEye, faEnvelope, faArrowRight} from '@fortawesome/free-solid-svg-icons'; 
 import {faGithub, faLinkedin} from '@fortawesome/free-brands-svg-icons'
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 
 export default function CV(){
     return(

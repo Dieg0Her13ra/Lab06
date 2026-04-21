@@ -17,7 +17,7 @@
 }
 
 .project__card:hover {
-    transhtmlForm: translateY(-10px);
+    transform: translateY(-10px);
     box-shadow: var(--shadow-xl);
     border-color: var(--color-primary);
 }
@@ -75,7 +75,7 @@
 .project__link:hover {
     background: var(--color-primary);
     color: white;
-    transhtmlForm: scale(1.1);
+    transform: scale(1.1);
 }
 
 .project__content {

@@ -20,7 +20,7 @@
     overflow: hidden;
 }
 
-.interest__card::behtmlFore {
+.interest__card::before {
     content: '';
     position: absolute;
     top: 0;
@@ -28,18 +28,18 @@
     right: 0;
     height: 3px;
     background: var(--gradient-primary);
-    transhtmlForm: scaleX(0);
-    transition: transhtmlForm var(--transition-base);
+    transform: scaleX(0);
+    transition: transform var(--transition-base);
 }
 
 .interest__card:hover {
-    transhtmlForm: translateY(-5px);
+    transform: translateY(-5px);
     box-shadow: var(--shadow-xl);
     border-color: var(--color-primary);
 }
 
-.interest__card:hover::behtmlFore {
-    transhtmlForm: scaleX(1);
+.interest__card:hover::before {
+    transform: scaleX(1);
 }
 
 .card__icon {
@@ -59,7 +59,7 @@
 .interest__card:hover .card__icon {
     background: var(--gradient-primary);
     color: white;
-    transhtmlForm: scale(1.1);
+    transform: scale(1.1);
 }
 
 .card__title {
@@ -135,5 +135,5 @@
 .subject:hover {
     background: var(--gradient-primary);
     color: white;
-    transhtmlForm: translateY(-2px);
+    transform: translateY(-2px);
 }

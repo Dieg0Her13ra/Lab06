@@ -47,7 +47,7 @@
 .footer__social_link:hover {
     background: var(--gradient-primary);
     color: white;
-    transhtmlForm: translateY(-5px);
+    transform: translateY(-5px);
 }
 
 .footer__bottom {
