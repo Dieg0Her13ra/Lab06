@@ -1,6 +1,9 @@
 import React from 'react';
 import styles from  './CV.module.css'
 import Link from 'next/link';
+import {faDownload, faEye, faEnvelope, faArrowRight} from '@fortawesome/free-solid-svg-icons'; 
+import {faGithub, faLinkedin} from '@fortawesome/free-brands-svg-icons'
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 
 export default function CV(){
     return(
@@ -18,10 +21,10 @@ export default function CV(){
                         
                         <div className={styles.cv__buttons}>
                             <a href="https://www.overleaf.com/gallery/tagged/cv" className="btn btn--primary btn--large">
-                                <i className="fas fa-download"></i> Descargar CV
+                                 <FontAwesomeIcon icon={faDownload}/> Descargar CV
                             </a>
                             <a href="https://dieg0her13ra.github.io/lab05HerreraHern-ndezDiego/" className="btn btn--secondary btn--large">
-                                <i className="fas fa-eye"></i> Ver CV Digital Html
+                                 <FontAwesomeIcon icon={faEye}/>Ver CV Digital Html
                             </a>
                         </div>
                     </div>
@@ -31,37 +34,37 @@ export default function CV(){
                         <div className={styles.cv__social_links}>
                             <a href="https://linkedin.com/in/dhh-azdrak" target="_blank" rel="noopener noreferrer" className={styles.social__card}>
                                 <div className={`${styles.social__icon} ${styles['social__icon__linkedin']}`}>
-                                    <i className="fab fa-linkedin-in"></i>
+                                     <FontAwesomeIcon icon={faLinkedin}/>
                                 </div>
                                 <div className={styles.social__info}>
                                     <span className={styles.social__name}>LinkedIn</span>
                                     <span className={styles.social__user}>@dhh-azdrak</span>
                                 </div>
                                
-                                <i className={`fas fa-arrow-right ${styles.social__arrow}`}></i>
+                               <FontAwesomeIcon icon={faArrowRight} className={styles.social__arrow}/> 
                             </a>
                             
                             <a href="https://github.com/Dieg0Her13ra" target="_blank" rel="noopener noreferrer" className={styles.social__card}>
                                 <div className={`${styles.social__icon} ${styles['social__icon__github']}`}>
                                     
-                                    <i className="fab fa-github"></i>
+                                    <FontAwesomeIcon icon={faGithub}/>
                                 </div>
                                 <div className={styles.social__info}>
                                     <span className={styles.social__name}>GitHub</span>
                                     <span className={styles.social__user}>@Dieg0Her13ra</span>
                                 </div>
-                                <i className={`fas fa-arrow-right ${styles.social__arrow}`}></i>
+                                <FontAwesomeIcon icon={faArrowRight} className={styles.social__arrow}/> 
                             </a>
                             
                             <a href="mailto:diego0hh013@gmail.com" className={styles.social__card}>
                                 <div className={`${styles.social__icon} ${styles['social__icon__email']}`}>
-                                    <i className="fas fa-envelope"></i>
+                                    <FontAwesomeIcon icon={faEnvelope} /> 
                                 </div>
                                 <div className={styles.social__info}>
                                     <span className={styles.social__name}>Email</span>
                                     <span className={styles.social__user}>diego0hh013@gmail.com</span>
                                 </div>
-                                <i className={`fas fa-arrow-right ${styles.social__arrow}`}></i>
+                                <FontAwesomeIcon icon={faArrowRight} className={styles.social__arrow}/> 
                             </a>
                         </div>
                     </div>

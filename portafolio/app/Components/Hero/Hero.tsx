@@ -1,6 +1,8 @@
 import React from 'react';
 import styles from  './Hero.module.css'
 import Link from 'next/link';
+import { faRocket, faEnvelope,faUserAstronaut, faChevronDown} from '@fortawesome/free-solid-svg-icons'; 
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 
 let HeroData:string = 'Diego Herrera Hernández 🐉 '
 let HeroData2:string = 'Ingeniero de Software'
@@ -23,10 +25,10 @@ export default function Hero(){
                     </p>
                     <div className={styles.hero__buttons}>
                         <Link href="#projects" className="btn btn--primary">
-                            <i className="fas fa-rocket"></i> Ver mis proyectos
+                            <FontAwesomeIcon icon={faRocket} /> Ver mis proyectos
                         </Link>
                         <Link href="#contact" className="btn btn--outline">
-                            <i className="fas fa-envelope"></i> Contáctame
+                            <FontAwesomeIcon icon={faEnvelope} /> Contáctame
                         </Link>
                     </div>
                 </div>
@@ -34,7 +36,7 @@ export default function Hero(){
                 <div className={styles.hero__image}>
                     <div className={styles.hero__blob}>
                         <div className={styles.hero__avatar}>
-                            <i className="fas fa-user-astronaut"></i>
+                            <FontAwesomeIcon icon={faUserAstronaut} /> 
                         </div>
                     </div>
                 <div className={`${styles.hero__decoration} ${styles['hero__decoration--1']}`}></div>
@@ -46,7 +48,7 @@ export default function Hero(){
             <div className={styles.hero__scroll}>
                 <Link href="#interests" className={`${styles.hero__scroll} ${styles['hero__scroll-link']}`}>
                     <span>Scroll</span>
-                    <i className="fas fa-chevron-down"></i>
+                    <FontAwesomeIcon icon={faChevronDown} /> 
                 </Link>
             </div>
         </section>
