@@ -160,8 +160,6 @@ button {
 /* ========== LAYOUT ========== */
 .container {
     max-width: 1200px;
-    /* ERROR 3: El contenido no está centrado en la página
-       PISTA: Falta una propiedad que centra elementos de bloque horizontalmente */
     margin-left: auto;    
     margin-right: auto;/*ya quedo tocayoo*/
     padding: 0 var(--spacing-lg);
